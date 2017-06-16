@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -12008,7 +12008,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12125,9 +12125,9 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**Answer: We will be going over three customers one by one,</p>
-<p>First one i would argue is a restaurant as its taking fresh, frozen and delicatessen in good amounts.</p>
+<p>First one i would argue is a restaurant as its taking fresh, frozen and delicatessen(near to the mean) in good amounts.</p>
 <p>Second One definitely seems to be a shop in the market as they are taking more of milk and grocery items, and are taking frozen items at minimum.</p>
-<p>Third one is surely a bakery as its spending way more on milk and fresh, which makes it a ideal candidate for bakery related preparation stuff.</p>
+<p>Third one is surely a bakery as its spending way more on milk and fresh (near to the mean), which makes it a ideal candidate for bakery related preparation stuff.</p>
 <p>**</p>
 
 </div>
@@ -12155,7 +12155,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cross_validation</span>
@@ -12230,7 +12230,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Produce a scatter matrix for each pair of features in the data</span>
@@ -14056,7 +14056,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: It seems Grocery and Detergents_Paper are closely related, in the sense they form a direct line in the xy plane, in other words an ascending line maybe. This surely supports the prediction i made about Detergents_Paper in the last question. The points seem to be well distributed in the graph, and can be represented by a line of form y=mx+c , i.e. regression can be applied and is also supported by the R^2 score we calculated in the last question. And the data is normally distributed which is clear from the bell curve formed at the diagonal of every distribution.</strong></p>
+<p><strong>Answer: It seems Grocery and Detergents_Paper are closely related, in the sense they form a direct line in the xy plane, in other words an ascending line maybe. This surely supports the prediction i made about Detergents_Paper in the last question. The points seem to be well distributed in the graph, and can be represented by a line of form y=mx+c , i.e. regression can be applied and is also supported by the R^2 score we calculated in the last question. And the data doesn't seem like normally distributed. Data points tends to be lie near origin, as the units are high. Secondly even if we see the diagonals where the features are correlated to each other, that also seems to be skewed, and they even truncate at origin. And as all the points are only on the positive side and they seem to be a good cnadidate for log normal distribution.</strong></p>
 
 </div>
 </div>
@@ -14088,7 +14088,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Scale the data using the natural logarithm</span>
@@ -18204,7 +18204,7 @@ MBgMBsOmwDg/BoPBYDAYDAaDYVNgnB+DwWAwGAwGg8GwKfi/tBsM3KOlZsQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display the log-transformed sample data</span>
@@ -18310,7 +18310,7 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># For each feature find the data points with extreme high or low values</span>
@@ -18335,8 +18335,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 <span class="c1"># OPTIONAL: Select the indices for data points you wish to remove</span>
 <span class="kn">import</span> <span class="nn">collections</span>
 <span class="n">outliers</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">collections</span><span class="o">.</span><span class="n">Counter</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
 <span class="n">outliers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">indices</span><span class="p">))</span>
-<span class="n">outliers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span>
 
 <span class="c1"># Remove the outliers, if any were specified</span>
 <span class="n">good_data</span> <span class="o">=</span> <span class="n">log_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">log_data</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">outliers</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
@@ -19070,6 +19070,15 @@ Once you have performed this implementation, the dataset will be stored in the v
 
 </div>
 
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[128, 154, 65, 66, 75]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -19089,8 +19098,8 @@ Once you have performed this implementation, the dataset will be stored in the v
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: Yes there are many data points which are considered outliers for two or more than two features. Ofcourse i feel these data points should be removed, they prove to be out of IQR range for more than one features.
-In the present scenario, i have removed all the data points which tend to be outliers according to the above criterion, for two or more features. </strong></p>
+<p><strong>Answer: Yes there are some data points which are considered outliers for two or more than two features, which are indexed as [128, 154, 65, 66, 75]. Ofcourse i feel these data points should be removed, they prove to be out of IQR range for more than one features.
+In the present scenario, i have removed all the data points except of any from my three chosen sample set, which tend to be outliers according to the above criterion, for two or more features </strong></p>
 
 </div>
 </div>
@@ -21849,8 +21858,9 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: It depends on understanding the segments and their usege or psychology. 
-Firstly the distributor should have the proper customer clusters/segments, as we did above, then from them he should ideally choose the one group which he thinks shouldn't be affected much by the change. Like segment 0 is a group of restaurants/bakery or related once. They definitely need the items more often than the stores/markets. So you can try reducing the delivery dates for segment 1 people, but definitely not for segment 0 people. Segment 0 people require things fresh and they also rely on the daily return or what they earn, hence they wouldn't like if the delivery days are reduced. Infact even in segment 1 you should choose a random subset of people and try on them, if it suits your needs, and you don't feel any loss, then you can affectively apply the scheme to the entire segment, and then again check the response, and decide accordingly.</strong></p>
+<p>**Answer: As we have two homogeneous segments (clusters representing homogeneous groups), so we can use control and variation technique and identify which group would favour a particular change, like in our case the change in delivery system. Randomly few customers(test set) should be chosen from both the groups and a trial test should be applied. If customers of first group give positive results, then it should be applied on that full group, similar for the second group, or if both show positive result then apply it for entire customer base.</p>
+<p>Like in this set i suppose changing delivery date for first group test set, will not give any negative result, as they are mostly retailers or shopkeepers, on the other hand applying on second group will give negative result as they represent a group containing restaurants/bakery or related once, they require things fresh and they also rely on the daily return on what they earn. Hence in the end the wholesale distributor, (i mean after seeing the result), will preferably apply this system for first group of customers.
+**</p>
 
 </div>
 </div>
